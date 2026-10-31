@@ -22,7 +22,7 @@ const SearchBox = ({onSearch}: searchProps) => {
     }
 
     return(
-        <div className="mt-8 mb-2">
+        <div id="students" className="mt-8 mb-2">
             <input
                     type="text"
                     onChange={handleSearchChange}

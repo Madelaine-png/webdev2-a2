@@ -1,6 +1,9 @@
-
 /*
-    Footer component
+ * File: Footer.tsx
+ * Author: Sarah Sheraz
+ * Date: October 30, 2026
+ *
+ *  Footer component
  */
 
 // Major section: Footer component

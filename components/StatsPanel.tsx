@@ -1,6 +1,9 @@
-
 /*
-    StatsPanel component
+ * File: StatsPanel.tsx
+ * Author: Sarah Sheraz
+ * Date: October 30, 2026
+ *
+ * StatsPanel component
  */
 
 // Major section: Props interface
@@ -35,7 +38,7 @@ const StatsPanel = ({
   ];
 
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div id="overview" className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {stats.map((stat) => (
         <div
           key={stat.label}

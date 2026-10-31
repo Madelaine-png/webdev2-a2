@@ -1,6 +1,9 @@
-
 /*
-    navbar component
+ * File: Navbar.tsx
+ * Author: Sarah Sheraz
+ * Date: October 30, 2026
+ *
+ * navbar component
  */
 
 import Link from "next/link";

@@ -1,6 +1,9 @@
-
 /*
-    layout component
+ * File: layout.tsx
+ * Author: Sarah Sheraz
+ * Date: October 30, 2026
+ *
+ * layout component
  */
 
 import type { Metadata } from "next";

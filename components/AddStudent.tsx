@@ -61,7 +61,7 @@ const AddStudent = ({ onAdd }: AddStudentProps) => {
     }
 
     return(
-        <div className="flex gap-4 my-2">
+        <div id="add-student" className="flex gap-4 my-2">
             <input
                 type="text"
                 value={firstName}
