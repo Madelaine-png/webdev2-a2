@@ -19,7 +19,7 @@ import type { Student } from "@/data/students";
 // Major section: Props interface
 interface StudentCardProps {
   student: Student;
-  onRemove: (id: number) => void;
+  onRemove: (id: number, grade: number, average: number) => void;
 }
 
 // Major section: Student card component
@@ -70,7 +70,7 @@ const StudentCard = ({ student, onRemove }: StudentCardProps) => {
 
         <button
           type="button"
-          onClick={() => onRemove(student.id)}
+          onClick={() => onRemove(student.id, student.grade, student.average)}
           className="rounded-lg border border-red-300 px-4 py-2 text-sm font-medium text-red-700 hover:bg-red-50"
         >
           Remove

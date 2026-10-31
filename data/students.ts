@@ -20,7 +20,7 @@ export interface Student {
 }
 
 // Major section: Initial student data
-export const students: Student[] = [
+export const startingStudents: Student[] = [
   { id: 1, firstName: "Zara", lastName: "Ahmed", grade: 12, average: 92 },
   { id: 2, firstName: "Liam", lastName: "Chen", grade: 11, average: 85 },
   { id: 3, firstName: "Maya", lastName: "Singh", grade: 10, average: 78 },

@@ -18,13 +18,19 @@ import StudentCard from "./StudentCard";
 // Major section: Props interface
 interface StudentListProps {
   students: Student[];
-  onRemove: (id: number) => void;
+  search: string;
+  onRemove: (id: number, grade: number, average: number) => void;
 }
 
 // Major section: Student list component
-const StudentList = ({ students, onRemove }: StudentListProps) => {
+const StudentList = ({ students, search, onRemove }: StudentListProps) => {
+  // Major section: Filter students that match search input
+  const matching = students.filter((student) =>
+        student.lastName.toLowerCase().includes(search.toLowerCase())
+    );
+
   // Major section: Empty student list message
-  if (students.length === 0) {
+  if (matching.length === 0) {
     return (
       <p className="rounded-xl border border-slate-200 bg-white p-6 text-center text-slate-600">
         No students to show.
@@ -35,7 +41,7 @@ const StudentList = ({ students, onRemove }: StudentListProps) => {
   // Major section: Display student cards
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {students.map((student) => (
+      {matching.map((student) => (
         <StudentCard
           key={student.id}
           student={student}
